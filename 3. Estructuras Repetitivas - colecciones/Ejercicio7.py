@@ -1,3 +1,12 @@
+#Ejercicio 7: Desarrollo de factoriales
+#Crea una aplicación que pida dos números y calcule su factorial de cada 
+#número, pero el programa también tiene que indicar hasta que valor 
+#serian. Ejemplo: 
+#7!   > 1x2x3x4x5x6x7 
+#10! > 1x2x3x4x5x6x7x8x9x10 
+#>> son iguales hasta el múltiplo 7 
+
+
 num1 = int(input("Ingrese el primer número: "))
 num2 = int(input("Ingrese el segundo número: "))
 

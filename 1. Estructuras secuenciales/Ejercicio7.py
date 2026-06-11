@@ -7,7 +7,6 @@
 #pago por hora es de S/5.00 y el pago por los minutos restantes de S/0.10 
 #por minuto. 
 
-
 # Entrada de datos
 horas = int(input("Ingrese las horas de permanencia: "))
 minutos = int(input("Ingrese los minutos adicionales: "))

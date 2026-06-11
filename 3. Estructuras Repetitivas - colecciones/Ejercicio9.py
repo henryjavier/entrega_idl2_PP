@@ -1,15 +1,24 @@
-#Cuanto pagaría un cliente por una compra con descuento y cuanto sería 
-#el cambio que recibiría en un pago en efectivo. Ingresar el monto base, 
-#el porcentaje de descuento y el con cuánto dinero está pagando el 
-#cliente. 
+#Calcular el producto utilizando arrays: 100 x 98 x 96 x 94 x . . . x 1 en 
+#este orden. 
 
-monto_base = float(input("Monto base de la compra: S/ "))
-porcentaje_descuento = float(input("Porcentaje de descuento: % "))
-dinero_pagado = float(input("Dinero con el que está pagando el cliente: S/ "))
+# Crear el array
+numeros = []
 
-descuento = monto_base * (porcentaje_descuento / 100)
-monto_con_descuento = monto_base - descuento
-cambio = dinero_pagado - monto_con_descuento
+for i in range(100, 0, -2):
+    numeros.append(i)
 
-print("Monto con descuento: S/ ", monto_con_descuento)
-print("Cambio a recibir: S/ ", cambio)
+# Agregar el 1 al final
+numeros.append(1)
+
+# Calcular el producto
+producto = 1
+
+for numero in numeros:
+    producto *= numero
+
+# Mostrar el array
+print("Array:")
+print(numeros)
+
+# Mostrar el resultado
+print("Producto =", producto)
